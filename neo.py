@@ -96,7 +96,7 @@ def load_graph(client, db, nodes_file, edges_file):
     print("Relationships loaded successfully!")
 
 def queryTwo(client, db, disease_id, root = None):
-    print("Running query one...")
+    print("Running query two...")
     with client.session(database=db) as session:
         result = session.run("""
         MATCH (c:Compound)-[:CuG|CdG]->(g:Gene)
